@@ -39,17 +39,21 @@ html, body {
 .search-section h1 {
     font-family: "Abel", sans-serif;
     font-size: 3em;
+    position: relative;
+    right: 0.1em;
 }
 
 .search-section p {
     font-family: "DM Sans", sans-serif;
     font-size: 15px;
-}  
+    position: relative;
+    right: 0.7em;
+}
 
 .input-section {
     margin-top: 2em;
     position: relative;
-    left: 2em;
+    left: 2.2em;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -58,7 +62,7 @@ html, body {
 
 .input-section input {
     width: 40%;
-    margin-right: 2em;
+    margin-right: 1em;
     height: 3em;
     padding: 0 1em;
     font-family: "DM Sans", sans-serif;
@@ -74,6 +78,7 @@ html, body {
     color: #EBEBF0;
     border-radius: 1em;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .alert-span {
@@ -99,12 +104,9 @@ html, body {
     width: 40%;
     border-radius: 1em;
     padding: 1em;
-    /* position: fixed;
-    top: 24.5em;
-    right: 48em; */
     position: absolute;
-    top: 0.05em;
-    right: 22em;
+    top: -22px;
+    right: 21.4em;
     visibility: hidden;
 }
 
@@ -181,15 +183,19 @@ html, body {
 }
 
 .movie-genders span + span {
-    margin-left: 1em;
+    margin-left: 0.9em;
 }
 
 .gender-span {
     background-color: #636366;
     color: #fff;
     border-radius: 1em;
-    padding: 2px 8px;
+    padding: 3px 10px;
     width: auto;
+}
+
+.gender-span + .gender-span {
+    margin-left: 0.4em;
 }
 
 .fa-circle {
